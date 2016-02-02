@@ -113,7 +113,7 @@ public class Server implements Runnable {
                             id=stringTokenizer.nextToken();
                             name=stringTokenizer.nextToken();
 
-                            messageAll(Protocol.LOGIN +"||"+ id +"name");
+                            messageAll(Protocol.LOGIN +"||"+ id +"||" +name);
 
                             //요청한 헤당 클라이언트 저장
                             vectorGClient.addElement(this);
